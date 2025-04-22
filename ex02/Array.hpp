@@ -23,6 +23,7 @@ public:
     }
 
     Array& operator=(Array& src) {
+        delete[] arr;
         _size = src._size;
         arr = new T[src._size];
         for (unsigned int i = 0; i < src._size; i++) { arr[i] = src[i]; }
