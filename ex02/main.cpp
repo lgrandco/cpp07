@@ -13,6 +13,6 @@ int main(void) {
     Array<> d;
     std::cout << get_color() << "The size of my array is " << c.size() << std::endl;
     for (int i = -13; i < 11; i++) try {
-            std::cout << get_color() << c[i] << ANSI_RESET << std::endl;
+            std::cout << get_color() << i << ": " << c[i] << ANSI_RESET << std::endl;
         } catch (std::exception& e) { print_color(e.what(), std::cerr); }
 }
